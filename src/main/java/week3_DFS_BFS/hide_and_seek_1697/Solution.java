@@ -25,7 +25,7 @@ public class Solution {
         visited[N]=1; //시작 위치 방문
 
         while (!queue.isEmpty()) {
-            int current = queue.poll(); //
+            int current = queue.poll(); //시작 위치 꺼내기
             if(current == K){
                 System.out.println(visited[current]-1);
                 return;
@@ -36,12 +36,12 @@ public class Solution {
                 queue.add(current - 1);
             }
 
-            if(current +1 < MAX && visited[current + 1]==0){
+            if(current +1 <= MAX && visited[current + 1]==0){
                 visited[current + 1] = visited[current] + 1;
                 queue.add(current + 1);
             }
 
-            if(current * 2 < MAX && visited[current * 2]==0){
+            if(current * 2 <= MAX && visited[current * 2]==0){
                 visited[current * 2] = visited[current] + 1;
                 queue.add(current * 2);
             }
