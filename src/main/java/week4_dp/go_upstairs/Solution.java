@@ -1,4 +1,4 @@
-package main.java.week4_dp.go_upstairs;
+package main.java.week4_DP.go_upstairs;
 
 //계단은 한 번에 1) 한 계단씩 또는 2) 두 계단씩 오를 수 있다.
 //연속된 세개의 계단을 모두 밟아서는 안된다, 시작점은 제외
