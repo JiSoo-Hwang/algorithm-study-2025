@@ -13,7 +13,6 @@ package main.java.week4_DP.tiling2n_11726;
 * n ... 방법 (n-1)+(n-2) ->근데 이렇다는걸 어떻게 확신할 수 있지?
 * */
 import java.io.*;
-import java.util.*;
 public class Solution {
 
     public static void main(String[] args) throws IOException {
