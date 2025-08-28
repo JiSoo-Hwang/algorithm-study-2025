@@ -12,7 +12,23 @@ package main.java.week4_DP.tiling2n_11726;
 * n = 4 방법 5
 * n ... 방법 (n-1)+(n-2) ->근데 이렇다는걸 어떻게 확신할 수 있지?
 * */
-
+import java.io.*;
+import java.util.*;
 public class Solution {
 
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int n = Integer.parseInt(st.nextToken());
+
+        int[] dp  = new int[n+1];
+        dp[1] = 1;
+        dp[2] = 2;
+        for (int i = 3; i <= n; i++){
+            dp[i] = dp[i-1]+dp[i-2];
+        }
+
+        System.out.println(dp[n]%10007);
+    }
 }
