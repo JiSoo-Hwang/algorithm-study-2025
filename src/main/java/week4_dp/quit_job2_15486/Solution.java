@@ -13,7 +13,8 @@ package main.java.week4_DP.quit_job2_15486;
 * 입력 : N, N개의 줄에 T와 P가 공백으로 구분되어서 주어지며, 1일부터 N일까지 순서대로 주어진다.
 * */
 /*
-* 알고리즘 설계 : N+1 크기의 dp배열에서 N번째 배열에서 T는 1만 허용된다.
+* 알고리즘 설계 :
+* 예: N+1 크기의 dp배열에서 N번째 배열에서 T는 1만 허용된다.
 * N-i>=T 선택할 수 있는 부분, 이것과 선택하지 않았을 때의 가격 비교 -> 큰 것 취하고 저장하기 price +1
 * N-i<T인 경우에는 continue;
 * dp[0] 반환
@@ -37,11 +38,15 @@ public class Solution {
             P[i] = Integer.parseInt(st1.nextToken());
         }
 
-        for(int j = N; j>=1; j--){
-            int skip = dp[N+1-j];
-            if(N+1-j>=T[j]){
+        //역순으로 백트래킹 : skip은 그대로 두는 것, 선택한다면 dp[N-j]
+        for(int j = N-1; j>=0; j--){
+            if(N-j<T[j]) continue; //상담하는데 필요한 시간이 남은 근무일수보다 크면 PASS
+            int next = j + T[j];
+            int take = next <= N?P[j]+dp[next]:0;
+            int skip = dp[j+1];
+            dp[j] = Math.max(take,skip);
 
-            }
         }
+        System.out.println(dp[0]);
     }
 }
