@@ -1,4 +1,4 @@
-package main.java.week3_DFS_BFS.hide_and_seek_2_12851;
+package main.java.week3_dfs_bfs.hide_and_seek_2_12851;
 //숨바꼭질 1과 같은 조건들에 추가로 가장 빠른 시간으로 찾는 방법의 가지수 구하기
 import java.util.*;
 import java.io.*;

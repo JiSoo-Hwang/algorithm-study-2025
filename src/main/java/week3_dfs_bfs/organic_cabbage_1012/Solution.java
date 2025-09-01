@@ -1,4 +1,4 @@
-package main.java.week3_DFS_BFS.organic_cabbage_1012;
+package main.java.week3_dfs_bfs.organic_cabbage_1012;
 import java.io.*;
 import java.util.*;
 

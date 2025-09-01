@@ -1,4 +1,4 @@
-package main.java.week3_DFS_BFS.apartment_numbering_2667;
+package main.java.week3_dfs_bfs.apartment_numbering_2667;
 import java.io.*;
 import java.util.*;
 

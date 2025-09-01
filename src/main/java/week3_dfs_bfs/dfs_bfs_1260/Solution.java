@@ -1,4 +1,4 @@
-package main.java.week3_DFS_BFS.dfs_bfs_1260;
+package main.java.week3_dfs_bfs.dfs_bfs_1260;
 import java.io.*;
 import java.util.*;
 

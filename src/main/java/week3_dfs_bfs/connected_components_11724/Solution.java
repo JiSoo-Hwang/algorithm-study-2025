@@ -1,4 +1,4 @@
-package main.java.week3_DFS_BFS.connected_components_11724;
+package main.java.week3_dfs_bfs.connected_components_11724;
 import java.io.*;
 import java.util.*;
 

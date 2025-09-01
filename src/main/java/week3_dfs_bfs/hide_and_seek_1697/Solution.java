@@ -1,4 +1,4 @@
-package main.java.week3_DFS_BFS.hide_and_seek_1697;
+package main.java.week3_dfs_bfs.hide_and_seek_1697;
 //수빈이가 동생을 찾을 수 있는 가장 빠른 시간
 //입력값 : 수빈이의 위치 N 동생일 있는 위치 K N과 K는 정수
 //N(0<=N<=100000) (0<=K<=100000)
